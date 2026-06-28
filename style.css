@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* NAV */
+nav {
+  background: #0f172a;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 50px;
+}
+
+header h1 {
+  font-size: 50px;
+  color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+  background: #111827;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+}
+
+/* SKILLS */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  background: #38bdf8;
+  color: black;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  width: 200px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* LIGHT MODE */
+.light {
+  background: white;
+  color: black;
+}
+
+.light section {
+  background: #f1f5f9;
+  color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
